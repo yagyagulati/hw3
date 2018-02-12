@@ -1,10 +1,17 @@
-function setup(){
-  createCanvas(340,340);
-}
+function setup() { 
+  createCanvas(400, 400);
+} 
 
+function draw() { 
+  background(220);
+}
 function draw(){
-     if (key == 'T') {
-    background(255,255,255);}
   fill(255,0,0);
   ellipse(mouseX, mouseY,15,15);
+}
+function keyPressed() {
+  print(key);
+  if (key == 'E') {
+    background(255, 255, 255);
+  }
 }
